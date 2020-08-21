@@ -2,17 +2,22 @@ We are going build a Library Management App from Scratch!!
 
 Here are the first **user actions** of our app:
 
-** Core Features **
+## Core Features
 
 [ ] As a librarian, I can add a new book
+
 [ ] As a librarian, I can list all the books, sorted by author
+
 [ ] As a librarian, I can mark a book as loaned
+
 [ ] As a librarian, I can see all loaned books that are overdue
+
 [ ] As a librarian, I can list all the book loans
+
 [ ] As a librarian, I can mark a loaned book as returned
 
 
-**Things to Consider**
+## Things to Consider
 
 The application is designed for **a single library**, so no need to build for a multi-library one (e.g. we don't need a `Library` model).
 
@@ -36,7 +41,7 @@ The book model should also:
 - When loaned, we should be able to check if the
 loan is overdue (the return date is before the current date)
 
-### 1.2 - Book Repository
+### Book Repository
 
 Now that we have a model representing our books, we need a repository to store them.
 
@@ -52,7 +57,7 @@ This repository is initialized with a CSV file path. It reads/writes the meals f
 
 Write some code to implement this and crash-test your repository. You should create your own `books.csv` CSV file inside a `data`folder.
 
-### 1.3 - Router and App
+### Router and App
 
 As you know from previous exercises, we need a router and we need to fill in the `app.rb` file.
 
@@ -63,7 +68,7 @@ The `app.rb` file is responsible for requiring all the necessary files, instanci
 Fill in the `router.rb` and `app.rb` files to implement this. If you're stuck, you can go back to the solutions of the cookbook and the food delivery app, download the solution to get some inspiration.
 
 
-### 1.4 - Book Controller
+### Book Controller
 
 Let's move to the controller. Let's go back to the features
 we want to implement, and break down everything the
@@ -102,7 +107,7 @@ and which loan date is overdue
 Remember that the role of the controller is to delegate and coordinate the work to the other components of our app (model, repository and view)!
 
 
-## 3 - Optional Features
+## Optional Features
 
 - As a librarian, I can log in to the app
 
@@ -111,7 +116,7 @@ repositories speak SQL. You need to set up a database with a
 books table instead of a books.csv. Also, think about
 the new dependencies that you need
 
-## 4 - Advanced features
+## Advanced features
 
 Only spend time on this if you are very comfortable with OOP and
 database design already!
